@@ -309,4 +309,4 @@ MIT
 
 ---
 
-<sub>mwakidenis</sub>
+<sub>proudly made by 🛠️ mwakidenis 🚀</sub>
