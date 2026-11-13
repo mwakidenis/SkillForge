@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+.skillforge/
+bin/
+obj/
+*.user
+*.log
+.DS_Store
+.env.local
