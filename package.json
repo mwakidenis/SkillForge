@@ -1,0 +1,23 @@
+{
+  "name": "skillforge-monorepo",
+  "private": true,
+  "type": "module",
+  "description": "SkillForge - Local-first, offline-capable Portable Agent Skill & Harness Runner",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
