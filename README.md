@@ -223,11 +223,34 @@ sf <command> [options]
 # Validate a skill (exit 0 on success)
 sf validate examples/skills/refactor-module.md
 sf validate examples/skills/refactor-module.md --json
+```
 
+Sample `sf validate` output:
+
+```
+Valid: refactor-module v1.0.0
+  tools: fs.read, fs.write, fs.list, shell.exec
+  parameters: 3
+  contentHash: 2e3998efd980997f3e0feb9999458b4c8d27da1e1f0d24e55aa050d15fce632d
+```
+
+```bash
 # List available skills
 sf list examples/skills
 sf list examples/skills --json
+```
 
+Sample `sf list` output:
+
+```
+id                   name                              version  path                                                                 
+-------------------  --------------------------------  -------  ---------------------------------------------------------------------
+generate-unit-tests  Exhaustive Unit Test Generator    1.0.0    C:\Users\Denis\Downloads\skill\examples\skills\generate-unit-tests.md
+refactor-module      Deterministic Module Refactorer   1.0.0    C:\Users\Denis\Downloads\skill\examples\skills\refactor-module.md    
+security-audit       Read-Only Security Audit Scanner  1.0.0    C:\Users\Denis\Downloads\skill\examples\skills\security-audit.md     
+```
+
+```bash
 # Initialize .skillforge/ in the current repo
 sf init
 
@@ -283,3 +306,7 @@ dotnet build apps/tray-monitor/SkillForgeTray.sln
 ## License
 
 MIT
+
+---
+
+<sub>mwakidenis</sub>
